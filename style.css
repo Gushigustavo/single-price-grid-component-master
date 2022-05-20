@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+}
+
+:root{
+    --fontpadrao:'Karla', sans-serif;
+
+    /* Primary */
+    --color1:hsl(179, 62%, 43%);
+    --color2:hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --color3:hsla(203, 44%, 93%, 0.69);
+    --color4:hsl(218, 22%, 67%);
+    
+}
+body{
+    font-size: 16px;
+    background-color: var(--color3);
+    height: 100vh;
+    font-family: var(--fontpadrao);
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed red;
+    padding: 20px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+    width: 568px;
+}
+.container__box1{
+
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.box1__title--settings{
+    color: var(--color1);
+}
+.box1__subtitle--settings{
+    color: var(--color2);
+    font-size: 15px;
+    margin: 20px 0px 10px 0px;
+}
+.box1__paragraph--settings{
+    color: var(--color4);
+    font-size: 14px ;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+/* Second Box */
+
+.container__box2{
+    background-color: var(--color1);
+    width: 284px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.box2__title--settings{
+    font-size: 15px;
+    margin: 10px 0px 0px 0px;
+
+}
+.box2__dollar-month{
+    display: flex;
+    margin: 10px 0px;
+
+
+}
+.box2__dollar-month span:nth-child(1){
+    
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.box2__dollar-month span:nth-child(2){
+    align-self: center;
+    color: var(--color3);
+    font-size: 14px;
+    
+}
+.box2__paragraph--settings{
+    font-size: 14px;
+}
+.box2__button--settings{
+    background-color: var(--color2);
+    color:#fff;
+    border-radius: 5px;
+    height: 40px;
+    margin: 25px 0px 0px 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.box2__button--settings:hover{
+    background-color: rgb(169, 198, 38);
+
+}
+
+/* Third box */
+.container__box3{
+    padding: 30px;
+    width: 280px;
+    background-color: var(--color2);
+    color: #fff;
+}
+.box3__title--settings{
+    font-size: 15px;
+    margin: 10px 0px;  
+}
+
+
+
+
+
