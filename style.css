@@ -13,10 +13,12 @@
     /* Primary */
     --color1:hsl(179, 62%, 43%);
     --color2:hsl(71, 73%, 54%);
+    
 
     /* Neutral */
     --color3:hsla(203, 44%, 93%, 0.69);
     --color4:hsl(218, 22%, 67%);
+    --color5:hsl(179, 47%, 52%);
     
 }
 body{
@@ -30,14 +32,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px dashed red;
-    padding: 20px;
+    padding: 40px;
 
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid blue;
     width: 568px;
 }
 .container__box1{
@@ -66,12 +66,14 @@ main{
 /* Second Box */
 
 .container__box2{
+    flex-grow: 1;
     background-color: var(--color1);
     width: 284px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     color: #fff;
+    border-radius: 0px 0px 0px 5px;
 }
 .box2__title--settings{
     font-size: 15px;
@@ -107,6 +109,7 @@ main{
     margin: 25px 0px 0px 0px;
     font-weight: 700;
     cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.237);
 }
 .box2__button--settings:hover{
     background-color: rgb(169, 198, 38);
@@ -114,16 +117,27 @@ main{
 }
 
 /* Third box */
+
 .container__box3{
+    flex-grow: 1;
     padding: 30px;
     width: 280px;
-    background-color: var(--color2);
+    background-color: var(--color5);
     color: #fff;
+    border-radius: 0px 0px 5px 0px;
 }
 .box3__title--settings{
     font-size: 15px;
     margin: 10px 0px;  
 }
+.box3__list--settings{
+    font-size: 12px;
+    color: var(--color3);
+    line-height: 17px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color:var(--color5); }
+
 
 
 
