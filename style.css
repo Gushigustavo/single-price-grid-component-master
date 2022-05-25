@@ -28,7 +28,6 @@ body{
     font-family: var(--fontpadrao);
 }
 main{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +35,7 @@ main{
 
 }
 .container{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     width: 568px;
